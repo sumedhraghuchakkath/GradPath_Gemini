@@ -1,0 +1,401 @@
+﻿Year,Month,Sector,Job_Role,Company,Hiring_Count,Hiring_Growth_%,Placement_Count,Average_Salary,Location,Demand_Trend,Source,Source_Page
+2020,October,Automotive,Automotive Engineer,Tata Motors,350,-7,35,5.9,Pune,Decreasing,Naukri,4
+2020,October,Automotive,EV Engineer,Tata Motors,375,-7,38,7,Pune,Decreasing,Naukri,6
+2020,October,Automotive,Quality Engineer,Mahindra & Mahindra,450,-7,45,5.1,Pune,Decreasing,Naukri,5
+2020,October,BFSI,Accounts Executive,KPMG India,250,-27,25,5.5,Mumbai,Decreasing,Naukri,5
+2020,October,BFSI,Credit Analyst,Axis Bank,325,-22,32,5.1,Mumbai,Decreasing,Naukri,4
+2020,October,BFSI,Credit Analyst,HDFC Bank,510,10,51,5.1,Chandigarh,Increasing,Naukri,6
+2020,October,BFSI,Financial Analyst,Deloitte India,325,-22,32,5.9,Mumbai,Decreasing,Naukri,5
+2020,October,BFSI,Financial Analyst,HDFC Bank,300,-27,30,5.9,Mumbai,Decreasing,Naukri,4
+2020,October,BFSI,Insurance Analyst,ICICI Lombard,460,10,46,5.5,Chandigarh,Increasing,Naukri,5
+2020,October,BFSI,Risk Analyst,ICICI Lombard,400,-2,40,6.2,Mumbai,Decreasing,Naukri,4
+2020,October,Chemicals,Process Engineer,Reliance Industries,635,30,64,5.5,Mumbai,Increasing,Naukri,4
+2020,October,Education,Academic Program Manager,upGrad,270,-18,27,5.5,Bengaluru,Decreasing,Naukri,5
+2020,October,Education,Education Consultant,BYJU'S,445,-18,44,5.1,Bengaluru,Decreasing,Naukri,4
+2020,October,Education,Instructional Designer,Simplilearn,445,-18,44,5.1,Bengaluru,Decreasing,Naukri,6
+2020,October,Energy,Energy Analyst,NTPC,310,-40,31,5.9,Delhi-NCR,Decreasing,Naukri,5
+2020,October,Energy,Project Engineer,ONGC,210,-40,21,6.2,Mumbai,Decreasing,Naukri,4
+2020,October,Healthcare,Healthcare Operations Manager,Fortis Healthcare,360,0,36,6.2,Delhi-NCR,Stable,Naukri,4
+2020,October,Healthcare,Hospital Administrator,Apollo Hospitals,360,0,36,6.2,Delhi-NCR,Stable,Naukri,6
+2020,October,Healthcare,Medical Technologist,Apollo Hospitals,535,0,54,4.3,Hyderabad,Stable,Naukri,4
+2020,October,Healthcare,Medical Technologist,Metropolis Healthcare,485,0,48,4.3,Kochi,Stable,Naukri,5
+2020,October,Healthcare,Pharmacovigilance Specialist,Cipla,505,-6,50,5.9,Hyderabad,Decreasing,Naukri,5
+2020,October,IT/Technology,Cloud Engineer,IBM India,320,-23,32,8.6,Bengaluru,Decreasing,Naukri,5
+2020,October,IT/Technology,Cybersecurity Analyst,HCLTech,345,-23,34,7.8,Chennai,Decreasing,Naukri,5
+2020,October,IT/Technology,DevOps Engineer,Wipro,345,-23,34,8.2,Pune,Decreasing,Naukri,4
+2020,October,IT/Technology,IT Support Engineer,HCLTech,345,-23,34,5.5,Chennai,Decreasing,Naukri,4
+2020,October,IT/Technology,Network Administrator,Wipro,560,15,56,5.5,Chandigarh,Increasing,Naukri,6
+2020,October,IT/Technology,Network Engineer,Cisco India,525,3,52,5.1,Bengaluru,Increasing,Naukri,4
+2020,October,IT/Technology,Network Engineer,Tech Mahindra,460,15,46,5.1,Chandigarh,Increasing,Naukri,5
+2020,October,IT/Technology,Software Engineer,Accenture India,295,-23,30,5.9,Mumbai,Decreasing,Naukri,5
+2020,October,IT/Technology,Software Engineer,Infosys,320,-23,32,5.9,Bengaluru,Decreasing,Naukri,4
+2020,October,IT/Technology,Software Engineer,TCS,345,-23,34,5.9,Bengaluru,Decreasing,Naukri,4
+2020,October,IT/Technology,System Administrator,Wipro,535,15,54,5.5,Chandigarh,Increasing,Naukri,5
+2020,October,IT/Technology,Technical Support Engineer,Cisco India,610,15,61,5.5,Chandigarh,Increasing,Naukri,6
+2020,October,Logistics,Operations Analyst,Delhivery,465,6,46,5.5,Pune,Increasing,Naukri,6
+2020,October,Logistics,Procurement Specialist,Blue Dart,465,6,46,5.5,Pune,Increasing,Naukri,5
+2020,October,Logistics,Supply Chain Analyst,DHL India,415,6,42,5.5,Pune,Increasing,Naukri,4
+2020,October,Manufacturing,Automation Engineer,Siemens India,345,-8,34,6.6,Chennai,Decreasing,Naukri,6
+2020,October,Manufacturing,Maintenance Engineer,Bosch India,420,-8,42,5.1,Pune,Decreasing,Naukri,5
+2020,October,Manufacturing,Production Engineer,Larsen & Toubro,320,-8,32,5.1,Chennai,Decreasing,Naukri,4
+2020,October,Media & Entertainment,Content Strategist,Times Internet,460,-10,46,6.2,Delhi-NCR,Decreasing,Naukri,4
+2020,October,Media & Entertainment,Digital Marketing Specialist,WPP India,335,-10,34,5.5,Mumbai,Decreasing,Naukri,5
+2020,October,Pharma,Clinical Research Associate,Sun Pharma,330,-6,33,4.7,Hyderabad,Decreasing,Naukri,4
+2020,October,Real Estate,Property Sales Manager,Godrej Properties,350,-12,35,6.2,Delhi-NCR,Decreasing,Naukri,5
+2020,October,Real Estate,Real Estate Analyst,DLF,475,-12,48,5.9,Delhi-NCR,Decreasing,Naukri,4
+2020,October,Retail & Consumer,Category Manager,Hindustan Unilever,300,-37,30,7,Delhi-NCR,Decreasing,Naukri,4
+2020,October,Retail & Consumer,Customer Experience Manager,Reliance Retail,575,13,58,5.9,Mumbai,Increasing,Naukri,6
+2020,October,Retail & Consumer,E-commerce Manager,Amazon India,300,-37,30,8.6,Bengaluru,Decreasing,Naukri,4
+2020,October,Retail & Consumer,E-commerce Manager,Flipkart,325,-37,32,8.6,Bengaluru,Decreasing,Naukri,6
+2020,October,Retail & Consumer,Retail Operations Manager,Reliance Retail,200,-37,20,5.5,Mumbai,Decreasing,Naukri,4
+2020,October,Retail & Consumer,Store Operations Manager,DMart,350,-37,35,5.5,Pune,Decreasing,Naukri,5
+2020,October,Telecom,Network Engineer,Bharti Airtel,215,-39,22,5.1,Hyderabad,Decreasing,Naukri,4
+2020,October,Telecom,Telecom Analyst,Ericsson India,165,-39,16,5.5,Chennai,Decreasing,Naukri,5
+2020,October,Travel & Hospitality,Ground Operations Executive,Air India,195,-58,20,3.9,Delhi-NCR,Decreasing,Naukri,6
+2020,October,Travel & Hospitality,Hotel Operations Manager,IHCL,90,-58,9,5.5,Mumbai,Decreasing,Naukri,4
+2020,October,Travel & Hospitality,Revenue Manager,OYO,220,-58,22,5.9,Hyderabad,Decreasing,Naukri,5
+2020,October,Travel & Hospitality,Travel Operations Manager,MakeMyTrip,220,-58,22,5.1,Delhi-NCR,Decreasing,Naukri,4
+2021,April,Automotive,EV Engineer,Bosch India,2072,8.2,104,7.5,Pune,Increasing,Naukri,3
+2021,April,Healthcare,Healthcare Operations Manager,Fortis Healthcare,2072,8.2,104,6.6,Mumbai,Increasing,Naukri,3
+2021,April,IT/Technology,Software Engineer,TCS,2072,8.2,104,6.2,Bengaluru,Increasing,Naukri,3
+2021,April,Other Services,Automation Engineer,Siemens India,2072,8.2,104,7.1,Pune,Increasing,Naukri,3
+2021,April,Other Services,Business Analyst,TCS,2072,8.2,104,6.6,Bengaluru,Increasing,Naukri,3
+2021,April,Retail & Consumer,Retail Operations Manager,Reliance Retail,2072,8.2,104,5.8,Mumbai,Increasing,Naukri,3
+2021,April,Travel & Hospitality,Revenue Manager,MakeMyTrip,2072,8.2,104,6.2,Delhi-NCR,Increasing,Naukri,3
+2021,May,Education,Academic Program Manager,BYJU'S,2047,-1.21,102,5.8,Bengaluru,Decreasing,Naukri,3
+2021,May,IT/Technology,Process Associate,Genpact,2047,-1.21,102,5.8,Hyderabad,Decreasing,Naukri,3
+2021,May,Media & Entertainment,Digital Marketing Specialist,WPP India,2047,-1.21,102,5.8,Mumbai,Decreasing,Naukri,3
+2021,May,Other Services,Customer Experience Manager,Reliance Retail,2047,-1.21,102,6.2,Mumbai,Decreasing,Naukri,3
+2021,May,Retail & Consumer,E-commerce Manager,Amazon India,2047,-1.21,102,9.1,Bengaluru,Decreasing,Naukri,3
+2021,May,Telecom,5G Engineer,Ericsson India,2047,-1.21,102,7.9,Bengaluru,Decreasing,Naukri,3
+2021,June,Automotive,Automotive Engineer,Tata Motors,2359,15.24,118,6.2,Pune,Increasing,Naukri,3
+2021,June,Education,Education Consultant,upGrad,2359,15.24,118,5.4,Bengaluru,Increasing,Naukri,3
+2021,June,IT/Technology,Network Administrator,Cisco India,2359,15.24,118,5.8,Bengaluru,Increasing,Naukri,3
+2021,June,Other Services,Legal Counsel,Cyril Amarchand Mangaldas,2359,15.24,118,5.8,Mumbai,Increasing,Naukri,3
+2021,June,Other Services,Technical Support Engineer,HCLTech,2359,15.24,118,5.8,Pune,Increasing,Naukri,3
+2021,June,Real Estate,Property Sales Manager,Godrej Properties,2359,15.24,118,6.6,Mumbai,Increasing,Naukri,3
+2021,July,BFSI,Financial Analyst,HDFC Bank,2625,11.28,131,6.2,Mumbai,Increasing,Naukri,3
+2021,July,Healthcare,Medical Technologist,Apollo Hospitals,2625,11.28,131,4.6,Delhi-NCR,Increasing,Naukri,3
+2021,July,IT/Technology,Data Analyst,Accenture India,2625,11.28,131,5.8,Bengaluru,Increasing,Naukri,3
+2021,July,Manufacturing,Automation Engineer,Siemens India,2625,11.28,131,7.1,Pune,Increasing,Naukri,3
+2021,July,Other Services,HR Business Partner,Infosys,2625,11.28,131,5.8,Bengaluru,Increasing,Naukri,3
+2021,July,Other Services,Operations Analyst,Delhivery,2625,11.28,131,5.8,Kolkata,Increasing,Naukri,3
+2021,August,Automotive,Quality Engineer,Mahindra & Mahindra,2673,1.83,134,5.4,Pune,Increasing,Naukri,3
+2021,August,Energy,Energy Analyst,NTPC,2673,1.83,134,6.2,Delhi-NCR,Increasing,Naukri,3
+2021,August,IT/Technology,Data Scientist,IBM India,2673,1.83,134,8.7,Hyderabad,Increasing,Naukri,3
+2021,August,Manufacturing,Production Engineer,Larsen & Toubro,2673,1.83,134,5.4,Chennai,Increasing,Naukri,3
+2021,August,Other Services,Hospital Administrator,Max Healthcare,2673,1.83,134,6.6,Delhi-NCR,Increasing,Naukri,3
+2021,August,Other Services,Sales Executive,HDFC Bank,2673,1.83,134,5.8,Mumbai,Increasing,Naukri,3
+2021,September,BFSI,Risk Analyst,Kotak Mahindra Bank,2753,2.99,138,6.6,Mumbai,Increasing,Naukri,3
+2021,September,Logistics,Supply Chain Analyst,DHL India,2753,2.99,138,5.8,Pune,Increasing,Naukri,3
+2021,September,Media & Entertainment,Content Strategist,Zee Entertainment,2753,2.99,138,6.6,Mumbai,Increasing,Naukri,3
+2021,September,Other Services,Instructional Designer,Simplilearn,2753,2.99,138,5.4,Bengaluru,Increasing,Naukri,3
+2021,September,Other Services,Procurement Specialist,DHL India,2753,2.99,138,5.8,Pune,Increasing,Naukri,3
+2021,September,Telecom,Network Engineer,Bharti Airtel,2753,2.99,138,5.4,Delhi-NCR,Increasing,Naukri,3
+2021,October,BFSI,Insurance Analyst,ICICI Lombard,2523,-8.35,126,5.8,Mumbai,Decreasing,Naukri,3
+2021,October,Healthcare,Pharmacovigilance Specialist,Cipla,2523,-8.35,126,6.2,Pune,Decreasing,Naukri,3
+2021,October,IT/Technology,DevOps Engineer,Tech Mahindra,2523,-8.35,126,8.7,Hyderabad,Decreasing,Naukri,3
+2021,October,Other Services,Communications Manager,Sony Pictures Networks India,2523,-8.35,126,7.1,Mumbai,Decreasing,Naukri,3
+2021,October,Other Services,Program Manager,Azim Premji Foundation,2523,-8.35,126,6.2,Bengaluru,Decreasing,Naukri,3
+2021,October,Real Estate,Real Estate Analyst,DLF,2523,-8.35,126,6.2,Delhi-NCR,Decreasing,Naukri,3
+2021,November,BFSI,Investment Analyst,Deloitte India,2173,-13.87,109,7.5,Mumbai,Decreasing,Naukri,3
+2021,November,Healthcare,Clinical Research Associate,Sun Pharma,2173,-13.87,109,5,Hyderabad,Decreasing,Naukri,3
+2021,November,IT/Technology,Cloud Engineer,Infosys,2173,-13.87,109,9.1,Bengaluru,Decreasing,Naukri,3
+2021,November,Other Services,Energy Project Engineer,Adani Green Energy,2173,-13.87,109,5.8,Ahmedabad,Decreasing,Naukri,3
+2021,November,Other Services,Project Manager,Larsen & Toubro,2173,-13.87,109,10,Pune,Decreasing,Naukri,3
+2021,November,Retail & Consumer,Category Manager,Hindustan Unilever,2173,-13.87,109,7.5,Mumbai,Decreasing,Naukri,3
+2021,December,BFSI,Credit Analyst,Axis Bank,1915,-11.87,96,5.4,Mumbai,Decreasing,Naukri,3
+2021,December,Energy,Renewable Energy Engineer,Tata Power,1915,-11.87,96,7.1,Ahmedabad,Decreasing,Naukri,3
+2021,December,Manufacturing,Maintenance Engineer,Bosch India,1915,-11.87,96,5.4,Chennai,Decreasing,Naukri,3
+2021,December,Other Services,Content Strategist,Times Internet,1915,-11.87,96,6.6,Delhi-NCR,Decreasing,Naukri,3
+2021,December,Other Services,Embedded Systems Engineer,Bosch India,1915,-11.87,96,7.9,Pune,Decreasing,Naukri,3
+2021,December,Travel & Hospitality,Hotel Operations Manager,IHCL,1915,-11.87,96,5.8,Mumbai,Decreasing,Naukri,3
+2022,April,Automotive,EV Engineer,Tata Motors,1038,37,104,7.9,Pune,Increasing,Naukri,4
+2022,April,Automotive,Embedded Systems Engineer,Bosch India,1008,37,101,8.4,Pune,Increasing,Naukri,6
+2022,April,Automotive,Quality Engineer,Mahindra & Mahindra,978,37,98,5.7,Pune,Increasing,Naukri,5
+2022,April,BFSI,Business Analyst,HDFC Bank,988,77,99,7,Mumbai,Increasing,Naukri,6
+2022,April,BFSI,Credit Analyst,Kotak Mahindra Bank,932,63,93,5.7,Coimbatore,Increasing,Naukri,5
+2022,April,BFSI,Financial Analyst,HDFC Bank,1078,77,108,6.6,Mumbai,Increasing,Naukri,4
+2022,April,BFSI,Insurance Analyst,ICICI Lombard,1072,83,107,6.2,Mumbai,Increasing,Naukri,4
+2022,April,BFSI,Investment Analyst,Deloitte India,988,77,99,7.9,Mumbai,Increasing,Naukri,5
+2022,April,BFSI,Risk Analyst,Axis Bank,738,22,74,7,Ahmedabad,Increasing,Naukri,5
+2022,April,BFSI,Underwriter,ICICI Lombard,982,83,98,6.2,Mumbai,Increasing,Naukri,6
+2022,April,Education,Academic Program Manager,BYJU'S,1112,108,111,6.2,Bengaluru,Increasing,Naukri,4
+2022,April,Education,Education Consultant,upGrad,1262,108,126,5.7,Bengaluru,Increasing,Naukri,5
+2022,April,Education,Instructional Designer,Simplilearn,1172,108,117,5.7,Bengaluru,Increasing,Naukri,6
+2022,April,Energy,Project Engineer,Adani Green Energy,604,-4,60,7,Mumbai,Decreasing,Naukri,5
+2022,April,Energy,Renewable Energy Engineer,Tata Power,814,-4,81,7.5,Ahmedabad,Decreasing,Naukri,6
+2022,April,Healthcare,Clinical Research Associate,Dr Reddy's Laboratories,728,27,73,5.3,Hyderabad,Increasing,Naukri,6
+2022,April,Healthcare,Clinical Research Associate,Sun Pharma,968,27,97,5.3,Hyderabad,Increasing,Naukri,4
+2022,April,Healthcare,Healthcare Operations Manager,Apollo Hospitals,758,12,76,7,Hyderabad,Increasing,Naukri,4
+2022,April,Healthcare,Hospital Administrator,Max Healthcare,668,12,67,7,Delhi-NCR,Increasing,Naukri,6
+2022,April,Healthcare,Medical Technologist,Fortis Healthcare,866,24,87,4.8,Kochi,Increasing,Naukri,5
+2022,April,IT/Technology,AI Engineer,Infosys,764,21,76,11.4,Bengaluru,Increasing,Naukri,6
+2022,April,IT/Technology,Cloud Engineer,Wipro,794,21,79,9.7,Hyderabad,Increasing,Naukri,6
+2022,April,IT/Technology,Cloud Engineer,Wipro,952,38,95,9.7,Pune,Increasing,Naukri,4
+2022,April,IT/Technology,Cybersecurity Analyst,Cognizant India,1018,32,102,8.8,Hyderabad,Increasing,Naukri,4
+2022,April,IT/Technology,Data Analyst,Accenture India,958,47,96,6.2,Delhi-NCR,Increasing,Naukri,4
+2022,April,IT/Technology,Data Scientist,IBM India,728,27,73,9.2,Bengaluru,Increasing,Naukri,5
+2022,April,IT/Technology,DevOps Engineer,TCS,794,21,79,9.2,Bengaluru,Increasing,Naukri,6
+2022,April,IT/Technology,DevOps Engineer,Tech Mahindra,982,38,98,9.2,Kolkata,Increasing,Naukri,4
+2022,April,IT/Technology,Network Administrator,Cisco India,664,-4,66,6.2,Bengaluru,Decreasing,Naukri,4
+2022,April,IT/Technology,Network Engineer,HCLTech,794,36,79,5.7,Chandigarh,Increasing,Naukri,5
+2022,April,IT/Technology,Process Associate,Genpact,830,45,83,6.2,Hyderabad,Increasing,Naukri,4
+2022,April,IT/Technology,Software Engineer,HCLTech,996,34,100,6.6,Chennai,Increasing,Naukri,4
+2022,April,IT/Technology,Software Engineer,Infosys,992,63,99,6.6,Mumbai,Increasing,Naukri,4
+2022,April,IT/Technology,Software Engineer,TCS,704,21,70,6.6,Bengaluru,Increasing,Naukri,4
+2022,April,Logistics,Operations Analyst,Delhivery,1052,63,105,6.2,Coimbatore,Increasing,Naukri,6
+2022,April,Logistics,Supply Chain Analyst,DHL India,1142,63,114,6.2,Coimbatore,Increasing,Naukri,5
+2022,April,Manufacturing,Automation Engineer,Siemens India,868,32,87,7.5,Vadodara,Increasing,Naukri,5
+2022,April,Manufacturing,Maintenance Engineer,Bosch India,920,15,92,5.7,Chennai,Increasing,Naukri,5
+2022,April,Manufacturing,Manufacturing Engineer,Tata Steel,974,21,97,6.2,Jamshedpur,Increasing,Naukri,6
+2022,April,Manufacturing,Production Engineer,Larsen & Toubro,910,50,91,5.7,Jaipur,Increasing,Naukri,5
+2022,April,Media & Entertainment,Content Strategist,Zee Entertainment,890,30,89,7,Mumbai,Increasing,Naukri,6
+2022,April,Media & Entertainment,Digital Marketing Specialist,Times Internet,980,30,98,6.2,Delhi-NCR,Increasing,Naukri,5
+2022,April,Pharma,Pharmacovigilance Specialist,Cipla,878,27,88,6.6,Pune,Increasing,Naukri,5
+2022,April,Real Estate,Project Manager,DLF,1096,89,110,10.6,Delhi-NCR,Increasing,Naukri,6
+2022,April,Real Estate,Property Sales Manager,DLF,1066,89,107,7,Delhi-NCR,Increasing,Naukri,4
+2022,April,Real Estate,Real Estate Analyst,Godrej Properties,1066,89,107,6.6,Mumbai,Increasing,Naukri,5
+2022,April,Retail & Consumer,Brand Manager,Hindustan Unilever,966,34,97,8.8,Mumbai,Increasing,Naukri,4
+2022,April,Retail & Consumer,Category Manager,Amazon India,988,47,99,7.9,Mumbai,Increasing,Naukri,5
+2022,April,Retail & Consumer,Customer Experience Manager,Reliance Retail,1098,112,110,6.6,Mumbai,Increasing,Naukri,6
+2022,April,Retail & Consumer,E-commerce Manager,Flipkart,1338,112,134,9.7,Bengaluru,Increasing,Naukri,5
+2022,April,Retail & Consumer,Retail Operations Manager,Reliance Retail,1098,112,110,6.2,Mumbai,Increasing,Naukri,4
+2022,April,Telecom,5G Engineer,Ericsson India,944,36,94,8.4,Bengaluru,Increasing,Naukri,5
+2022,April,Telecom,Network Engineer,Bharti Airtel,944,36,94,5.7,Delhi-NCR,Increasing,Naukri,4
+2022,April,Telecom,Telecom Analyst,Bharti Airtel,944,36,94,6.2,Delhi-NCR,Increasing,Naukri,6
+2022,April,Travel & Hospitality,Guest Experience Manager,IHCL,1446,169,145,5.7,Mumbai,Increasing,Naukri,6
+2022,April,Travel & Hospitality,Hotel Operations Manager,Taj Hotels,1296,169,130,6.2,Mumbai,Increasing,Naukri,4
+2022,April,Travel & Hospitality,Revenue Manager,MakeMyTrip,1416,169,142,6.6,Delhi-NCR,Increasing,Naukri,5
+2023,September,Automotive,EV Design Engineer,Tata Motors,624,6,62,6.6,Pune,Increasing,Foundit,9
+2023,September,Automotive,EV Engineer,Mahindra & Mahindra,820,6,82,8.5,Pune,Increasing,Foundit,6
+2023,September,Automotive,EV Service Engineer,Tata Motors,758,5,76,6.6,Pune,Increasing,Foundit,5
+2023,September,BFSI,Credit Analyst,Axis Bank,648,-18,65,6.1,Mumbai,Decreasing,Foundit,5
+2023,September,BFSI,Financial Analyst,ICICI Bank,564,-18,56,7,Mumbai,Decreasing,Foundit,5
+2023,September,BFSI,Risk Analyst,Kotak Mahindra Bank,480,-18,48,7.5,Mumbai,Decreasing,Foundit,7
+2023,September,BFSI,Sales Executive,HDFC Bank,660,-2,66,6.6,Delhi-NCR,Decreasing,Foundit,5
+2023,September,BPO/ITES,Process Associate,Genpact,570,-3,57,6.6,Hyderabad,Decreasing,Foundit,5
+2023,September,Consumer Goods,Home Appliances Sales Manager,Samsung India,794,11,79,6.6,Bengaluru,Increasing,Foundit,5
+2023,September,Creative,Content Strategist,Zee Entertainment,644,-14,64,7.5,Mumbai,Decreasing,Foundit,6
+2023,September,Creative,UX Content Specialist,Flipkart,672,-14,67,6.6,Bengaluru,Decreasing,Foundit,9
+2023,September,Education,Education Consultant,upGrad,622,1,62,6.1,Bengaluru,Increasing,Foundit,5
+2023,September,Education,Instructional Designer,Simplilearn,706,1,71,6.1,Bengaluru,Increasing,Foundit,7
+2023,September,Energy,Energy Analyst,Adani Green Energy,704,10,70,7,Ahmedabad,Increasing,Foundit,6
+2023,September,Energy,Oil & Gas Analyst,ONGC,816,10,82,6.6,Mumbai,Increasing,Foundit,5
+2023,September,Engineering,Manufacturing Engineer,Tata Motors,706,1,71,6.6,Chennai,Increasing,Foundit,9
+2023,September,Engineering,Project Engineer,Larsen & Toubro,856,12,86,7.5,Pune,Increasing,Foundit,6
+2023,September,HR,HR Business Partner,Infosys,654,11,65,6.6,Bengaluru,Increasing,Foundit,6
+2023,September,HR,HR Operations Specialist,Wipro,728,0,73,6.6,Bengaluru,Stable,Foundit,9
+2023,September,Healthcare,Healthcare Operations Manager,Apollo Hospitals,664,-6,66,7.5,Hyderabad,Decreasing,Foundit,5
+2023,September,Healthcare,Pharmacovigilance Specialist,Dr Reddy's Laboratories,580,-6,58,7,Hyderabad,Decreasing,Foundit,7
+2023,September,IT/Technology,Automation Engineer,Siemens India,760,24,76,8,Bengaluru,Increasing,Foundit,5
+2023,September,IT/Technology,Cloud Engineer,Accenture India,634,-11,63,10.3,Hyderabad,Decreasing,Foundit,6
+2023,September,IT/Technology,IT Support Engineer,Wipro,476,-14,48,6.6,Bengaluru,Decreasing,Foundit,5
+2023,September,IT/Technology,Network Engineer,Tech Mahindra,662,-11,66,6.1,Pune,Decreasing,Foundit,6
+2023,September,IT/Technology,Software Engineer,HCLTech,718,-11,72,7,Hyderabad,Decreasing,Foundit,9
+2023,September,IT/Technology,Software Engineer,TCS,588,-14,59,7,Bengaluru,Decreasing,Foundit,6
+2023,September,Legal,Compliance Counsel,KPMG India,770,21,77,6.6,Mumbai,Increasing,Foundit,7
+2023,September,Legal,Legal Counsel,AZB & Partners,638,13,64,6.6,Delhi-NCR,Increasing,Foundit,6
+2023,September,Logistics,Operations Analyst,Delhivery,572,2,57,6.6,Pune,Increasing,Foundit,9
+2023,September,Logistics,Procurement Specialist,Delhivery,608,-6,61,6.6,Pune,Decreasing,Foundit,6
+2023,September,Logistics,Supply Chain Analyst,DHL India,664,-6,66,6.6,Pune,Decreasing,Foundit,5
+2023,September,Manufacturing,Automation Engineer,Siemens India,828,12,83,8,Bengaluru,Increasing,Foundit,6
+2023,September,Manufacturing,Production Engineer,Larsen & Toubro,632,12,63,6.1,Chennai,Increasing,Foundit,5
+2023,September,Manufacturing,Production Engineer,Tata Steel,650,1,65,6.1,Jamshedpur,Increasing,Foundit,5
+2023,September,Manufacturing,Quality Engineer,Bosch India,596,6,60,6.1,Pune,Increasing,Foundit,7
+2023,September,Marketing,Digital Marketing Specialist,WPP India,792,6,79,6.6,Mumbai,Increasing,Foundit,6
+2023,September,Marketing,PR Manager,Ogilvy India,708,6,71,6.6,Delhi-NCR,Increasing,Foundit,7
+2023,September,Media & Entertainment,Communications Manager,Times Internet,640,4,64,8,Mumbai,Increasing,Foundit,6
+2023,September,NGO/Social Services,Program Coordinator,Azim Premji Foundation,748,8,75,4.7,Bengaluru,Increasing,Foundit,5
+2023,September,NGO/Social Services,Program Manager,Pratham,776,8,78,7,Kolkata,Increasing,Foundit,7
+2023,September,Other Services,Digital Marketing Specialist,Ogilvy India,680,6,68,6.6,Mumbai,Increasing,Foundit,5
+2023,September,Other Services,Digital Marketing Specialist,Publicis Groupe India,750,13,75,6.6,Mumbai,Increasing,Foundit,5
+2023,September,Other Services,HR Business Partner,Tata Consultancy Services,654,11,65,6.6,Bengaluru,Increasing,Foundit,5
+2023,September,Other Services,Legal Counsel,Cyril Amarchand Mangaldas,862,13,86,6.6,Mumbai,Increasing,Foundit,5
+2023,September,Retail & Consumer,Category Manager,Reliance Retail,838,9,84,8.5,Delhi-NCR,Increasing,Foundit,5
+2023,September,Retail & Consumer,E-commerce Manager,Amazon India,614,9,61,10.3,Bengaluru,Increasing,Foundit,6
+2023,September,Retail & Consumer,Retail Store Manager,Reliance Retail,768,30,77,6.6,Mumbai,Increasing,Foundit,5
+2023,September,Retail & Consumer,Store Operations Manager,DMart,838,9,84,6.6,Pune,Increasing,Foundit,7
+2023,September,Sales,Sales Executive,Bajaj Finserv,604,-2,60,6.6,Mumbai,Decreasing,Foundit,6
+2023,September,Shipping/Marine,Marine Operations Executive,Maersk India,752,32,75,6.6,Mumbai,Increasing,Foundit,5
+2023,September,Shipping/Marine,Trade Compliance Analyst,DHL India,948,32,95,7.5,Mumbai,Increasing,Foundit,7
+2023,September,Telecom,5G Engineer,Ericsson India,690,3,69,8.9,Bengaluru,Increasing,Foundit,7
+2023,September,Travel & Hospitality,Guest Experience Manager,IHCL,664,8,66,6.1,Mumbai,Increasing,Foundit,5
+2023,September,Travel & Hospitality,Revenue Manager,OYO,696,18,70,7,Delhi-NCR,Increasing,Foundit,6
+2023,September,Travel & Hospitality,Travel Operations Manager,MakeMyTrip,752,18,75,6.1,Delhi-NCR,Increasing,Foundit,5
+2024,Annual,Automotive,Automotive Engineer,Tata Motors,1002,9,100,7.5,Pune,Increasing,Foundit,6
+2024,Annual,Automotive,EV Engineer,Mahindra & Mahindra,827,9,83,9,Pune,Increasing,Foundit,7
+2024,Annual,Automotive,Embedded Systems Engineer,Bosch India,877,9,88,9.5,Bengaluru,Increasing,Foundit,17
+2024,Annual,BFSI,Credit Analyst,Axis Bank,833,16,83,6.5,Delhi-NCR,Increasing,Foundit,6
+2024,Annual,BFSI,FinTech Product Analyst,Bajaj Finserv,983,16,98,7,Pune,Increasing,Foundit,9
+2024,Annual,BFSI,Financial Analyst,HDFC Bank,958,16,96,7.5,Mumbai,Increasing,Foundit,6
+2024,Annual,BFSI,Investment Analyst,Deloitte India,1008,16,101,9,Mumbai,Increasing,Foundit,17
+2024,Annual,BFSI,Risk Analyst,ICICI Bank,808,16,81,8,Mumbai,Increasing,Foundit,6
+2024,Annual,Construction,Civil Engineer,Larsen & Toubro,848,21,85,7,Pune,Increasing,Foundit,7
+2024,Annual,Consumer Electronics,IoT Engineer,Apple India,966,17,97,7,Bengaluru,Increasing,Foundit,7
+2024,Annual,Education,Education Consultant,upGrad,744,8,74,6.5,Bengaluru,Increasing,Foundit,6
+2024,Annual,Education,Instructional Designer,Simplilearn,794,8,79,6.5,Pune,Increasing,Foundit,7
+2024,Annual,Education,Training Manager,upGrad,819,8,82,8,Bengaluru,Increasing,Foundit,17
+2024,Annual,Energy,Energy Analyst,Adani Energy,960,10,96,7.5,Ahmedabad,Increasing,Foundit,6
+2024,Annual,Energy,Energy Analyst,NTPC,810,10,81,7.5,Delhi-NCR,Increasing,Foundit,17
+2024,Annual,Energy,Renewable Energy Engineer,Tata Power,985,10,98,8.5,Mumbai,Increasing,Foundit,7
+2024,Annual,Government & Defence,Cybersecurity Analyst,Tata Advanced Systems,833,16,83,10,Bengaluru,Increasing,Foundit,7
+2024,Annual,Healthcare,Clinical Research Associate,Dr Reddy's Laboratories,920,30,92,6,Hyderabad,Increasing,Foundit,6
+2024,Annual,Healthcare,Healthcare Operations Manager,Apollo Hospitals,970,30,97,8,Hyderabad,Increasing,Foundit,6
+2024,Annual,Healthcare,Hospital Administrator,Fortis Healthcare,1145,30,114,8,Delhi-NCR,Increasing,Foundit,17
+2024,Annual,Healthcare,Medical Technologist,Metropolis Healthcare,1120,30,112,5.5,Mumbai,Increasing,Foundit,9
+2024,Annual,Healthcare,Pharmacovigilance Specialist,Sun Pharma,995,30,100,7.5,Pune,Increasing,Foundit,7
+2024,Annual,IT/Technology,AI Engineer,TCS,1048,21,105,13,Bengaluru,Increasing,Foundit,6
+2024,Annual,IT/Technology,AI/ML Engineer,Wipro,933,16,93,7,Bengaluru,Increasing,Foundit,7
+2024,Annual,IT/Technology,Cloud Architect,IBM India,1098,21,110,7,Bengaluru,Increasing,Foundit,6
+2024,Annual,IT/Technology,Cloud Engineer,Infosys,908,16,91,11,Bengaluru,Increasing,Foundit,6
+2024,Annual,IT/Technology,Cybersecurity Engineer,HCLTech,998,21,100,7,Hyderabad,Increasing,Foundit,17
+2024,Annual,IT/Technology,Data Analyst,TCS,842,14,84,7,Bengaluru,Increasing,Foundit,6
+2024,Annual,IT/Technology,Data Engineer,Cognizant India,1006,22,101,7,Chennai,Increasing,Foundit,7
+2024,Annual,IT/Technology,Data Scientist,Accenture India,867,14,87,10.5,Hyderabad,Increasing,Foundit,6
+2024,Annual,IT/Technology,DevOps Engineer,Tech Mahindra,945,5,94,10.5,Hyderabad,Increasing,Foundit,6
+2024,Annual,IT/Technology,Digital Marketing Specialist,WPP India,876,12,88,7,Mumbai,Increasing,Foundit,6
+2024,Annual,IT/Technology,Java Developer,LTIMindtree,935,10,94,7,Pune,Increasing,Foundit,17
+2024,Annual,IT/Technology,Product Manager,Microsoft India,870,5,87,15,Bengaluru,Increasing,Foundit,6
+2024,Annual,IT/Technology,Project Manager,Capgemini India,895,5,90,12,Chennai,Increasing,Foundit,6
+2024,Annual,IT/Technology,Software Developer,Infosys,885,10,88,7,Pune,Increasing,Foundit,6
+2024,Annual,Logistics,Logistics Manager,DHL India,812,4,81,8,Mumbai,Increasing,Foundit,7
+2024,Annual,Logistics,Procurement Specialist,Delhivery,812,4,81,7,Pune,Increasing,Foundit,17
+2024,Annual,Logistics,Supply Chain Analyst,Delhivery,737,4,74,7,Pune,Increasing,Foundit,6
+2024,Annual,Manufacturing,Automation Engineer,Siemens India,932,19,93,8.5,Pune,Increasing,Foundit,7
+2024,Annual,Manufacturing,Manufacturing Engineer,Tata Steel,882,19,88,7,Jamshedpur,Increasing,Foundit,6
+2024,Annual,Manufacturing,Production Engineer,Tata Motors,1082,19,108,6.5,Pune,Increasing,Foundit,9
+2024,Annual,Manufacturing,Quality Engineer,Bosch India,957,19,96,6.5,Pune,Increasing,Foundit,7
+2024,Annual,Media & Entertainment,Content Strategist,Zee Entertainment,967,14,97,8,Mumbai,Increasing,Foundit,6
+2024,Annual,Media & Entertainment,Content Strategist,Zee Entertainment,792,14,79,8,Mumbai,Increasing,Foundit,9
+2024,Annual,Media & Entertainment,Digital Marketing Specialist,JioStar,992,14,99,7,Mumbai,Increasing,Foundit,7
+2024,Annual,Other Services,Cybersecurity Analyst,Tata Advanced Systems,933,16,93,10,Bengaluru,Increasing,Foundit,6
+2024,Annual,Other Services,ESG Analyst,KPMG India,776,12,78,7,Mumbai,Increasing,Foundit,17
+2024,Annual,Other Services,Project Engineer,Larsen & Toubro,937,29,94,8,Pune,Increasing,Foundit,6
+2024,Annual,Real Estate,Property Sales Manager,Godrej Properties,761,7,76,8,Mumbai,Increasing,Foundit,9
+2024,Annual,Real Estate,Real Estate Analyst,DLF,986,7,99,7.5,Delhi-NCR,Increasing,Foundit,7
+2024,Annual,Retail & Consumer,Category Manager,Hindustan Unilever,985,10,98,9,Mumbai,Increasing,Foundit,9
+2024,Annual,Retail & Consumer,Customer Experience Manager,Flipkart,1010,10,101,7.5,Bengaluru,Increasing,Foundit,17
+2024,Annual,Retail & Consumer,E-commerce Manager,Amazon India,935,10,94,11,Bengaluru,Increasing,Foundit,7
+2024,Annual,Retail & Consumer,Embedded Systems Engineer,Samsung India,891,17,89,9.5,Bengaluru,Increasing,Foundit,6
+2024,Annual,Retail & Consumer,Retail Operations Manager,Reliance Retail,985,10,98,7,Bengaluru,Increasing,Foundit,6
+2025,Annual,Automotive,EV Engineer,Mahindra & Mahindra,1045,15,104,9.7,Pune,Increasing,Foundit,12
+2025,Annual,BFSI,Credit Analyst,Axis Bank,879,17,88,7,Mumbai,Increasing,Foundit,13
+2025,Annual,BFSI,FinTech Product Manager,Bajaj Finserv,1191,23,119,7.6,Pune,Increasing,Foundit,10
+2025,Annual,BFSI,Financial Analyst,Deloitte India,1175,25,118,8.1,Mumbai,Increasing,Foundit,10
+2025,Annual,BFSI,Risk Analyst,HDFC Bank,1179,17,118,8.6,Mumbai,Increasing,Foundit,7
+2025,Annual,Construction,Project Engineer,Larsen & Toubro,1238,34,124,8.6,Pune,Increasing,Foundit,7
+2025,Annual,Consumer Electronics,IoT Engineer,Lenovo India,1164,53.48,116,7.6,Bengaluru,Increasing,Foundit,11
+2025,Annual,Education,Training Manager,upGrad,1026,8,103,8.6,Bengaluru,Increasing,Foundit,13
+2025,Annual,Energy,Energy Analyst,Adani Green Energy,1212,26,121,8.1,Ahmedabad,Increasing,Foundit,7
+2025,Annual,Energy,Renewable Energy Engineer,Tata Power,1062,26,106,9.2,Mumbai,Increasing,Foundit,12
+2025,Annual,Finance,Finance Manager,KPMG India,1041,23,104,7.6,Mumbai,Increasing,Foundit,11
+2025,Annual,Healthcare,Clinical Operations Manager,Sun Pharma,1156,48,116,7.6,Hyderabad,Increasing,Foundit,7
+2025,Annual,Healthcare,Medical Technologist,Apollo Hospitals,1172,16,117,5.9,Hyderabad,Increasing,Foundit,10
+2025,Annual,Healthcare,Pharmacovigilance Specialist,Cipla,1186,48,119,8.1,Pune,Increasing,Foundit,11
+2025,Annual,IT/Technology,AI Engineer,TCS,1030,30,103,14,Bengaluru,Increasing,Foundit,10
+2025,Annual,IT/Technology,AI Product Manager,Microsoft India,1030,30,103,7.6,Hyderabad,Increasing,Foundit,13
+2025,Annual,IT/Technology,Automation Engineer,Siemens India,669,-13,67,9.2,Pune,Decreasing,Foundit,7
+2025,Annual,IT/Technology,Cloud Architect,IBM India,1210,30,121,7.6,Hyderabad,Increasing,Foundit,11
+2025,Annual,IT/Technology,Cloud Engineer,Infosys,1060,30,106,11.9,Hyderabad,Increasing,Foundit,10
+2025,Annual,IT/Technology,Cybersecurity Analyst,Capgemini India,1270,30,127,10.8,Bengaluru,Increasing,Foundit,11
+2025,Annual,IT/Technology,Cybersecurity Engineer,HCLTech,1090,30,109,7.6,Bengaluru,Increasing,Foundit,10
+2025,Annual,IT/Technology,Data Analyst,TCS,1150,30,115,7.6,Bengaluru,Increasing,Foundit,11
+2025,Annual,IT/Technology,Data Engineer,Wipro,1120,30,112,7.6,Pune,Increasing,Foundit,10
+2025,Annual,IT/Technology,DevOps Engineer,Tech Mahindra,1240,30,124,11.3,Pune,Increasing,Foundit,11
+2025,Annual,IT/Technology,Embedded Systems Engineer,TCS,1000,30,100,10.3,Bengaluru,Increasing,Foundit,13
+2025,Annual,IT/Technology,Machine Learning Engineer,Accenture India,1180,30,118,7.6,Bengaluru,Increasing,Foundit,11
+2025,Annual,IT/Technology,Product Manager,Microsoft India,1150,30,115,16.2,Bengaluru,Increasing,Foundit,10
+2025,Annual,IT/Technology,Software Engineer,Cognizant India,1180,30,118,8.1,Chennai,Increasing,Foundit,10
+2025,Annual,Logistics,Operations Analyst,Delhivery,1349,37,135,7.6,Mumbai,Increasing,Foundit,13
+2025,Annual,Logistics,Procurement Specialist,DHL India,881,13,88,7.6,Pune,Increasing,Foundit,10
+2025,Annual,Logistics,Supply Chain Analyst,Delhivery,1139,37,114,7.6,Mumbai,Increasing,Foundit,7
+2025,Annual,Manufacturing,Automation Engineer,Siemens India,1363,39,136,9.2,Chennai,Increasing,Foundit,11
+2025,Annual,Manufacturing,Manufacturing Engineer,Tata Motors,1123,39,112,7.6,Pune,Increasing,Foundit,7
+2025,Annual,Manufacturing,Quality Engineer,Bosch India,1033,39,103,7,Pune,Increasing,Foundit,11
+2025,Annual,Marketing,Digital Marketing Specialist,WPP India,1188,14,119,7.6,Mumbai,Increasing,Foundit,10
+2025,Annual,Media & Entertainment,Content Strategist,Zee Entertainment,1162,36,116,8.6,Mumbai,Increasing,Foundit,7
+2025,Annual,Media & Entertainment,Digital Marketing Specialist,JioStar,1252,36,125,7.6,Mumbai,Increasing,Foundit,13
+2025,Annual,NGO/Social Services,Impact Reporting Analyst,Teach For India,1447,55.3,145,7.6,Pune,Increasing,Foundit,13
+2025,Annual,NGO/Social Services,Monitoring & Evaluation Analyst,Pratham,1417,55.3,142,7.6,Delhi-NCR,Increasing,Foundit,13
+2025,Annual,NGO/Social Services,Program Manager,Azim Premji Foundation,1147,55.3,115,8.1,Bengaluru,Increasing,Foundit,7
+2025,Annual,Other Services,Chief of Staff,Accenture India,1063,39,106,7.6,Bengaluru,Increasing,Foundit,10
+2025,Annual,Other Services,Creative Director,Zee Entertainment,980,10,98,7.6,Mumbai,Increasing,Foundit,11
+2025,Annual,Other Services,Director - Analytics,Accenture India,1243,39,124,7.6,Mumbai,Increasing,Foundit,13
+2025,Annual,Other Services,Director - Strategy,Deloitte India,1273,39,127,7.6,Gurugram,Increasing,Foundit,13
+2025,Annual,Other Services,ESG Analyst,KPMG India,1123,39,112,7.6,Mumbai,Increasing,Foundit,13
+2025,Annual,Other Services,HR Business Partner,Infosys,1051,33,105,7.6,Bengaluru,Increasing,Foundit,10
+2025,Annual,Other Services,Legal Counsel,Cyril Amarchand Mangaldas,844,12,84,7.6,Mumbai,Increasing,Foundit,10
+2025,Annual,Other Services,Shipping Analyst,Maersk India,1041,-7,104,7.6,Mumbai,Decreasing,Foundit,7
+2025,Annual,Other Services,Supply Chain Strategy Manager,DHL India,1183,39,118,7.6,Pune,Increasing,Foundit,13
+2025,Annual,Other Services,Talent Intelligence Specialist,Accenture India,1153,39,115,7.6,Bengaluru,Increasing,Foundit,13
+2025,Annual,Other Services,VP Digital Transformation,TCS,1213,39,121,7.6,Bengaluru,Increasing,Foundit,13
+2025,Annual,Real Estate,Property Sales Manager,Godrej Properties,1155,35,116,8.6,Mumbai,Increasing,Foundit,12
+2025,Annual,Real Estate,Real Estate Analyst,DLF,1185,35,118,8.1,Delhi-NCR,Increasing,Foundit,7
+2025,Annual,Retail & Consumer,E-commerce Manager,Amazon India,1058,34,106,11.9,Bengaluru,Increasing,Foundit,11
+2025,Annual,Retail & Consumer,Embedded Systems Engineer,Apple India,1164,53.48,116,10.3,Bengaluru,Increasing,Foundit,7
+2025,Annual,Retail & Consumer,Retail Operations Manager,Reliance Retail,1208,34,121,7.6,Bengaluru,Increasing,Foundit,7
+2025,Annual,Sales,Sales Manager,HDFC Bank,1011,23,101,7.6,Mumbai,Increasing,Foundit,10
+2026,June,Automotive,Automotive Engineer,Mahindra & Mahindra,783,5,78,8.4,Chennai,Increasing,Foundit,14
+2026,June,Automotive,EV Engineer,Tata Motors,811,5,81,10.1,Pune,Increasing,Foundit,8
+2026,June,Automotive,Embedded Systems Engineer,Bosch India,867,5,87,10.6,Pune,Increasing,Foundit,17
+2026,June,BFSI,Credit Analyst,Axis Bank,769,-9,77,7.3,Mumbai,Decreasing,Foundit,14
+2026,June,BFSI,Data Risk Analyst,HDFC Bank,993,11,99,7.8,Hyderabad,Increasing,Foundit,17
+2026,June,BFSI,Digital Banking Analyst,HDFC Bank,990,11,99,7.8,Hyderabad,Increasing,Foundit,15
+2026,June,BFSI,FinTech Product Analyst,Bajaj Finserv,944,20,94,7.8,Mumbai,Increasing,Foundit,17
+2026,June,BFSI,Risk Analyst,HDFC Bank,909,-9,91,9,Mumbai,Decreasing,Foundit,8
+2026,June,BFSI,Risk Analytics Manager,Deloitte India,853,11,85,7.8,Bengaluru,Increasing,Foundit,17
+2026,June,BPO/ITES,Process Associate,Genpact,832,-4,83,7.8,Hyderabad,Decreasing,Foundit,8
+2026,June,Chemicals,Process Engineer,Reliance Industries,608,-28,61,7.8,Mumbai,Decreasing,Foundit,8
+2026,June,Construction,Project Engineer,Larsen & Toubro,839,5,84,9,Mumbai,Increasing,Foundit,8
+2026,June,Energy,Energy Analyst,NTPC,636,-12,64,8.4,Delhi-NCR,Decreasing,Foundit,8
+2026,June,Energy,Renewable Energy Engineer,Tata Power,832,-12,83,9.5,Ahmedabad,Decreasing,Foundit,15
+2026,June,Finance,Financial Analyst,KPMG India,888,20,89,8.4,Mumbai,Increasing,Foundit,11
+2026,June,Government & Defence,Administrative Analyst,Deloitte India,888,0,89,7.8,Delhi-NCR,Stable,Foundit,11
+2026,June,Healthcare,Clinical Operations Manager,Apollo Hospitals,825,11,82,7.8,Hyderabad,Increasing,Foundit,8
+2026,June,Healthcare,Diagnostics Manager,Metropolis Healthcare,951,21,95,7.8,Mumbai,Increasing,Foundit,17
+2026,June,Healthcare,Hospital Administrator,Fortis Healthcare,797,11,80,9,Mumbai,Increasing,Foundit,14
+2026,June,Healthcare,Medical Technologist,Apollo Hospitals,979,21,98,6.2,Kochi,Increasing,Foundit,17
+2026,June,Healthcare,Pharmacovigilance Specialist,Sun Pharma,923,21,92,8.4,Hyderabad,Increasing,Foundit,11
+2026,June,IT/Technology,AI Engineer,Accenture India,1098,18,110,14.6,Bengaluru,Increasing,Foundit,15
+2026,June,IT/Technology,AI Platform Engineer,Infosys,955,18,96,7.8,Bengaluru,Increasing,Foundit,15
+2026,June,IT/Technology,AI Solutions Architect,TCS,965,11,96,7.8,Bengaluru,Increasing,Foundit,17
+2026,June,IT/Technology,Cloud Engineer,IBM India,825,11,82,12.3,Hyderabad,Increasing,Foundit,17
+2026,June,IT/Technology,Cloud Engineer,Infosys,902,-6,90,12.3,Bengaluru,Decreasing,Foundit,8
+2026,June,IT/Technology,Cybersecurity Engineer,HCLTech,762,-6,76,7.8,Hyderabad,Decreasing,Foundit,14
+2026,June,IT/Technology,Data Engineer,Wipro,846,18,85,7.8,Hyderabad,Increasing,Foundit,15
+2026,June,IT/Technology,Data Scientist,TCS,895,21,90,11.8,Bengaluru,Increasing,Foundit,15
+2026,June,IT/Technology,Product Manager,Microsoft India,923,21,92,16.8,Bengaluru,Increasing,Foundit,17
+2026,June,IT/Technology,Software Engineer,TCS,1098,18,110,8.4,Hyderabad,Increasing,Foundit,11
+2026,June,Logistics,Operations Analyst,Delhivery,587,-23,59,7.8,Mumbai,Decreasing,Foundit,8
+2026,June,Logistics,Supply Chain Analyst,Delhivery,783,-23,78,7.8,Mumbai,Decreasing,Foundit,15
+2026,June,Logistics,Trade Compliance Analyst,DHL India,566,-30,57,9,Mumbai,Decreasing,Foundit,8
+2026,June,Logistics,Warehouse Automation Manager,Delhivery,783,-23,78,7.8,Indore,Decreasing,Foundit,17
+2026,June,Manufacturing,Automation Engineer,Siemens India,797,3,80,9.5,Pune,Increasing,Foundit,14
+2026,June,Manufacturing,Industrial Automation Engineer,Siemens India,881,3,88,7.8,Coimbatore,Increasing,Foundit,17
+2026,June,Manufacturing,Production Engineer,Larsen & Toubro,657,-9,66,7.3,Pune,Decreasing,Foundit,11
+2026,June,Manufacturing,Production Engineer,Tata Steel,909,3,91,7.3,Pune,Increasing,Foundit,8
+2026,June,Manufacturing,Quality Engineer,Bosch India,797,-9,80,7.3,Pune,Decreasing,Foundit,17
+2026,June,Marketing,Digital Marketing Specialist,WPP India,1084,20,108,7.8,Mumbai,Increasing,Foundit,11
+2026,June,Marketing,Performance Marketing Manager,WPP India,920,20,92,7.8,Mumbai,Increasing,Foundit,12
+2026,June,Media & Entertainment,Content Strategist,Zee Entertainment,909,-1,91,9,Mumbai,Decreasing,Foundit,8
+2026,June,Media & Entertainment,Digital Marketing Specialist,JioStar,881,-1,88,7.8,Mumbai,Decreasing,Foundit,15
+2026,June,Other Services,Community Program Manager,Pratham,1000,4,100,7.8,Jaipur,Increasing,Foundit,17
+2026,June,Other Services,Creative Director,Zee Entertainment,839,-11,84,7.8,Mumbai,Decreasing,Foundit,11
+2026,June,Other Services,Guest Experience Manager,IHCL,888,0,89,7.3,Delhi-NCR,Stable,Foundit,11
+2026,June,Other Services,HR Business Partner,Infosys,776,-4,78,7.8,Bengaluru,Decreasing,Foundit,11
+2026,June,Other Services,Legal Counsel,Cyril Amarchand Mangaldas,888,4,89,7.8,Delhi-NCR,Increasing,Foundit,11
+2026,June,Other Services,Medical Operations Analyst,Apollo Hospitals,885,21,88,7.8,Bengaluru,Increasing,Foundit,12
+2026,June,Other Services,Medical Technologist,Apollo Hospitals,1063,21,106,6.2,Bengaluru,Increasing,Foundit,11
+2026,June,Other Services,Procurement Analyst,DHL India,951,1,95,7.8,Pune,Increasing,Foundit,14
+2026,June,Other Services,Sales Manager,HDFC Bank,769,-9,77,7.8,Mumbai,Decreasing,Foundit,11
+2026,June,Real Estate,Property Sales Manager,Godrej Properties,923,5,92,9,Mumbai,Increasing,Foundit,17
+2026,June,Real Estate,Real Estate Analyst,DLF,867,5,87,8.4,Delhi-NCR,Increasing,Foundit,8
+2026,June,Retail & Consumer,Category Manager,Hindustan Unilever,888,4,89,10.1,Mumbai,Increasing,Foundit,8
+2026,June,Retail & Consumer,Customer Experience Manager,Flipkart,818,-18,82,8.4,Bengaluru,Decreasing,Foundit,17
+2026,June,Retail & Consumer,E-commerce Manager,Amazon India,706,-18,71,12.3,Bengaluru,Decreasing,Foundit,8
+2026,June,Retail & Consumer,Retail Operations Manager,Reliance Retail,734,-18,73,7.8,Bengaluru,Decreasing,Foundit,14
+2026,June,Telecom,5G Engineer,Bharti Airtel,713,-1,71,10.6,Bengaluru,Decreasing,Foundit,17
+2026,June,Travel & Hospitality,Ground Operations Executive,Air India,1217,35,122,5.6,Hyderabad,Increasing,Foundit,14
+2026,June,Travel & Hospitality,Revenue Manager,MakeMyTrip,965,35,96,8.4,Delhi-NCR,Increasing,Foundit,8
+2026,June,Travel & Hospitality,Travel Operations Manager,MakeMyTrip,1161,35,116,7.3,Kochi,Increasing,Foundit,17

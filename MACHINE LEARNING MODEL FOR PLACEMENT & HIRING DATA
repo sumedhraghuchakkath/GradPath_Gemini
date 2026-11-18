@@ -1,0 +1,1388 @@
+# ============================================================
+# HISTORICAL PLACEMENT & HIRING
+# MACHINE LEARNING USING RANDOM FOREST
+# ============================================================
+
+# ============================================================
+# STEP 1: IMPORT LIBRARIES
+# ============================================================
+
+import os
+import pandas as pd
+import numpy as np
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+from sklearn.model_selection import train_test_split
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.pipeline import Pipeline
+
+from sklearn.ensemble import RandomForestClassifier
+
+from sklearn.metrics import (
+    accuracy_score,
+    precision_score,
+    recall_score,
+    f1_score,
+    classification_report,
+    confusion_matrix
+)
+
+
+# ============================================================
+# STEP 2: FIND THE DATASET
+# ============================================================
+
+# __file__ gives the location of this Python program.
+# Therefore, Python will search for the CSV in the same
+# folder as this Python file.
+
+folder = os.path.dirname(
+    os.path.abspath(__file__)
+)
+
+# We renamed your CSV to this simple name.
+csv_name = "hiring_data.csv"
+
+file_path = os.path.join(
+    folder,
+    csv_name
+)
+
+
+print("=" * 70)
+print("HISTORICAL PLACEMENT & HIRING ML PROJECT")
+print("=" * 70)
+
+print("\nLooking for dataset at:")
+print(file_path)
+
+
+# ============================================================
+# STEP 3: CHECK WHETHER DATASET EXISTS
+# ============================================================
+
+if not os.path.exists(file_path):
+
+    print("\nERROR: CSV file was not found!")
+
+    print("\nYour folder should contain:")
+    print("1. This Python file")
+    print("2. hiring_data.csv")
+
+    print("\nCurrent Python folder:")
+    print(folder)
+
+    raise FileNotFoundError(
+        f"\nCSV file not found:\n{file_path}"
+    )
+
+
+print("\nCSV file found successfully!")
+
+
+# ============================================================
+# STEP 4: LOAD DATASET
+# ============================================================
+
+df = pd.read_csv(
+    file_path
+)
+
+print("\nDataset loaded successfully!")
+
+print(
+    "Number of rows:",
+    df.shape[0]
+)
+
+print(
+    "Number of columns:",
+    df.shape[1]
+)
+
+
+# ============================================================
+# STEP 5: CLEAN COLUMN NAMES
+# ============================================================
+
+# Remove unwanted spaces from column names.
+
+df.columns = (
+    df.columns
+    .str.strip()
+)
+
+
+print("\nColumns found in dataset:")
+
+for column in df.columns:
+
+    print(" -", column)
+
+
+# ============================================================
+# STEP 6: REMOVE UNNECESSARY INDEX COLUMN
+# ============================================================
+
+# The CSV contains an 'index' column.
+# It is only a row identifier and has no useful meaning
+# for predicting hiring demand.
+
+if "index" in df.columns:
+
+    df = df.drop(
+        columns=["index"]
+    )
+
+    print(
+        "\nUnnecessary 'index' column removed."
+    )
+
+
+# ============================================================
+# STEP 7: DISPLAY FIRST FIVE RECORDS
+# ============================================================
+
+print("\nFirst 5 records:")
+
+print(
+    df.head()
+)
+
+
+# ============================================================
+# STEP 8: CHECK MISSING VALUES
+# ============================================================
+
+print("\nMissing values:")
+
+print(
+    df.isnull().sum()
+)
+
+
+# ============================================================
+# STEP 9: REMOVE DUPLICATE RECORDS
+# ============================================================
+
+before_duplicates = len(df)
+
+df = df.drop_duplicates()
+
+after_duplicates = len(df)
+
+duplicates_removed = (
+    before_duplicates -
+    after_duplicates
+)
+
+print(
+    "\nDuplicate records removed:",
+    duplicates_removed
+)
+
+
+# ============================================================
+# STEP 10: CLEAN TEXT COLUMNS
+# ============================================================
+
+# These are the categorical/text columns that actually
+# exist in your dataset.
+
+text_columns = [
+    "Month",
+    "Sector",
+    "Job_Role",
+    "Company",
+    "Location",
+    "Demand_Trend",
+    "Source"
+]
+
+
+for col in text_columns:
+
+    if col in df.columns:
+
+        df[col] = (
+            df[col]
+            .astype(str)
+            .str.strip()
+        )
+
+
+# ============================================================
+# STEP 11: CONVERT NUMERICAL COLUMNS
+# ============================================================
+
+numeric_columns = [
+    "Year",
+    "Hiring_Count",
+    "Hiring_Growth_%",
+    "Placement_Count",
+    "Average_Salary",
+    "Source_Page"
+]
+
+
+for col in numeric_columns:
+
+    if col in df.columns:
+
+        df[col] = pd.to_numeric(
+            df[col],
+            errors="coerce"
+        )
+
+
+# ============================================================
+# STEP 12: CHECK REQUIRED TARGET
+# ============================================================
+
+# Our classification target is Demand_Trend.
+
+if "Demand_Trend" not in df.columns:
+
+    raise ValueError(
+        "\nERROR: 'Demand_Trend' column was not found.\n"
+        f"Available columns:\n{df.columns.tolist()}"
+    )
+
+
+# Remove rows where target is missing.
+
+df = df.dropna(
+    subset=["Demand_Trend"]
+)
+
+
+# ============================================================
+# STEP 13: DISPLAY TARGET DISTRIBUTION
+# ============================================================
+
+print("\n" + "=" * 70)
+print("DEMAND TREND DISTRIBUTION")
+print("=" * 70)
+
+print(
+    df["Demand_Trend"]
+    .value_counts()
+)
+
+
+# ============================================================
+# STEP 14: SELECT FEATURES
+# ============================================================
+
+# IMPORTANT:
+#
+# We are NOT using Hiring_Growth_% as an input feature.
+#
+# Why?
+#
+# Demand_Trend is strongly connected to hiring growth.
+# Positive growth corresponds to Increasing,
+# zero growth corresponds to Stable,
+# and negative growth corresponds to Decreasing.
+#
+# Including Hiring_Growth_% would make the model
+# unrealistically easy and introduce data leakage.
+
+possible_features = [
+
+    "Year",
+
+    "Month",
+
+    "Sector",
+
+    "Job_Role",
+
+    "Company",
+
+    "Hiring_Count",
+
+    "Placement_Count",
+
+    "Average_Salary",
+
+    "Location",
+
+    "Source"
+]
+
+
+# Keep only features that exist.
+
+features = [
+
+    col
+
+    for col in possible_features
+
+    if col in df.columns
+]
+
+
+# Input data
+
+X = df[
+    features
+]
+
+
+# Target data
+
+y = df[
+    "Demand_Trend"
+]
+
+
+print("\n" + "=" * 70)
+print("FEATURES USED BY THE MODEL")
+print("=" * 70)
+
+for feature in features:
+
+    print(
+        " -",
+        feature
+    )
+
+
+print("\nTarget variable:")
+print(" - Demand_Trend")
+
+
+# ============================================================
+# STEP 15: IDENTIFY NUMERICAL FEATURES
+# ============================================================
+
+numeric_features = (
+    X
+    .select_dtypes(
+        include=[
+            "int64",
+            "float64",
+            "int32",
+            "float32"
+        ]
+    )
+    .columns
+    .tolist()
+)
+
+
+# ============================================================
+# STEP 16: IDENTIFY CATEGORICAL FEATURES
+# ============================================================
+
+categorical_features = (
+    X
+    .select_dtypes(
+        include=[
+            "object",
+            "category"
+        ]
+    )
+    .columns
+    .tolist()
+)
+
+
+print("\nNumerical features:")
+
+print(
+    numeric_features
+)
+
+
+print("\nCategorical features:")
+
+print(
+    categorical_features
+)
+
+
+# ============================================================
+# STEP 17: CREATE PREPROCESSING PIPELINE
+# ============================================================
+
+# Random Forest needs numerical input.
+#
+# Columns such as Sector, Job_Role and Location contain
+# text, so OneHotEncoder converts each category into
+# numerical columns.
+
+preprocessor = ColumnTransformer(
+
+    transformers=[
+
+        (
+            "categorical",
+
+            OneHotEncoder(
+                handle_unknown="ignore",
+                sparse_output=False
+            ),
+
+            categorical_features
+        ),
+
+        (
+            "numeric",
+
+            "passthrough",
+
+            numeric_features
+        )
+    ]
+)
+
+
+# ============================================================
+# STEP 18: CREATE RANDOM FOREST CLASSIFIER
+# ============================================================
+
+model = RandomForestClassifier(
+
+    # Number of decision trees
+    n_estimators=200,
+
+    # Makes results reproducible
+    random_state=42,
+
+    # Helps if some classes have fewer records
+    class_weight="balanced",
+
+    # Use all CPU cores
+    n_jobs=-1
+)
+
+
+# ============================================================
+# STEP 19: CREATE COMPLETE PIPELINE
+# ============================================================
+
+pipeline = Pipeline(
+
+    steps=[
+
+        (
+            "preprocessing",
+            preprocessor
+        ),
+
+        (
+            "model",
+            model
+        )
+    ]
+)
+
+
+# ============================================================
+# STEP 20: TRAIN / TEST SPLIT
+# ============================================================
+
+# 80% of the data is used for training.
+# 20% is used for testing.
+
+X_train, X_test, y_train, y_test = (
+
+    train_test_split(
+
+        X,
+
+        y,
+
+        test_size=0.20,
+
+        random_state=42,
+
+        # Keeps similar class proportions
+        # in training and testing.
+        stratify=y
+    )
+)
+
+
+print("\n" + "=" * 70)
+print("TRAIN / TEST SPLIT")
+print("=" * 70)
+
+print(
+    "Training records:",
+    len(X_train)
+)
+
+print(
+    "Testing records:",
+    len(X_test)
+)
+
+
+# ============================================================
+# STEP 21: TRAIN MODEL
+# ============================================================
+
+print("\n" + "=" * 70)
+print("TRAINING RANDOM FOREST MODEL")
+print("=" * 70)
+
+pipeline.fit(
+    X_train,
+    y_train
+)
+
+print(
+    "\nModel training completed successfully!"
+)
+
+
+# ============================================================
+# STEP 22: MAKE TEST PREDICTIONS
+# ============================================================
+
+y_pred = pipeline.predict(
+    X_test
+)
+
+
+# ============================================================
+# STEP 23: CALCULATE MODEL METRICS
+# ============================================================
+
+accuracy = accuracy_score(
+    y_test,
+    y_pred
+)
+
+
+precision = precision_score(
+    y_test,
+    y_pred,
+    average="weighted",
+    zero_division=0
+)
+
+
+recall = recall_score(
+    y_test,
+    y_pred,
+    average="weighted",
+    zero_division=0
+)
+
+
+f1 = f1_score(
+    y_test,
+    y_pred,
+    average="weighted",
+    zero_division=0
+)
+
+
+# ============================================================
+# STEP 24: DISPLAY MODEL PERFORMANCE
+# ============================================================
+
+print("\n" + "=" * 70)
+print("MODEL PERFORMANCE")
+print("=" * 70)
+
+print(
+    f"\nAccuracy  : {accuracy:.4f}"
+)
+
+print(
+    f"Precision : {precision:.4f}"
+)
+
+print(
+    f"Recall    : {recall:.4f}"
+)
+
+print(
+    f"F1 Score  : {f1:.4f}"
+)
+
+
+print("\nPerformance in percentage:")
+
+print(
+    f"Accuracy  : {accuracy * 100:.2f}%"
+)
+
+print(
+    f"Precision : {precision * 100:.2f}%"
+)
+
+print(
+    f"Recall    : {recall * 100:.2f}%"
+)
+
+print(
+    f"F1 Score  : {f1 * 100:.2f}%"
+)
+
+
+# ============================================================
+# STEP 25: CLASSIFICATION REPORT
+# ============================================================
+
+print("\n" + "=" * 70)
+print("CLASSIFICATION REPORT")
+print("=" * 70)
+
+print(
+    classification_report(
+        y_test,
+        y_pred,
+        zero_division=0
+    )
+)
+
+
+# ============================================================
+# STEP 26: CONFUSION MATRIX
+# ============================================================
+
+cm = confusion_matrix(
+    y_test,
+    y_pred,
+    labels=pipeline.named_steps[
+        "model"
+    ].classes_
+)
+
+
+classes = pipeline.named_steps[
+    "model"
+].classes_
+
+
+plt.figure(
+    figsize=(8, 6)
+)
+
+
+sns.heatmap(
+
+    cm,
+
+    annot=True,
+
+    fmt="d",
+
+    cmap="Blues",
+
+    xticklabels=classes,
+
+    yticklabels=classes
+)
+
+
+plt.xlabel(
+    "Predicted Demand Trend"
+)
+
+
+plt.ylabel(
+    "Actual Demand Trend"
+)
+
+
+plt.title(
+    "Random Forest Confusion Matrix"
+)
+
+
+plt.tight_layout()
+
+plt.show()
+
+
+# ============================================================
+# STEP 27: FEATURE IMPORTANCE
+# ============================================================
+
+# Get trained Random Forest model
+
+rf_model = pipeline.named_steps[
+    "model"
+]
+
+
+# Get feature names after One-Hot Encoding
+
+feature_names = pipeline.named_steps[
+    "preprocessing"
+].get_feature_names_out()
+
+
+# Get Random Forest importance values
+
+importance_values = (
+    rf_model
+    .feature_importances_
+)
+
+
+# Create a DataFrame
+
+feature_importance = pd.DataFrame({
+
+    "Feature":
+        feature_names,
+
+    "Importance":
+        importance_values
+})
+
+
+# Sort from highest to lowest
+
+feature_importance = (
+
+    feature_importance
+
+    .sort_values(
+
+        by="Importance",
+
+        ascending=False
+    )
+)
+
+
+# ============================================================
+# STEP 28: DISPLAY TOP FEATURES
+# ============================================================
+
+print("\n" + "=" * 70)
+print("TOP 20 IMPORTANT FEATURES")
+print("=" * 70)
+
+print(
+
+    feature_importance
+    .head(20)
+    .to_string(
+        index=False
+    )
+)
+
+
+# ============================================================
+# STEP 29: PLOT TOP FEATURES
+# ============================================================
+
+top_features = (
+
+    feature_importance
+
+    .head(15)
+
+    .sort_values(
+        "Importance"
+    )
+)
+
+
+plt.figure(
+    figsize=(10, 7)
+)
+
+
+sns.barplot(
+
+    data=top_features,
+
+    x="Importance",
+
+    y="Feature"
+)
+
+
+plt.title(
+    "Top Features Influencing Demand Trend"
+)
+
+
+plt.xlabel(
+    "Feature Importance"
+)
+
+
+plt.ylabel(
+    "Feature"
+)
+
+
+plt.tight_layout()
+
+plt.show()
+
+
+# ============================================================
+# STEP 30: GROUP FEATURE IMPORTANCE BY ORIGINAL COLUMN
+# ============================================================
+
+# OneHotEncoder creates many columns.
+#
+# Example:
+#
+# Sector_IT/Technology
+# Sector_Healthcare
+# Sector_BFSI
+#
+# Instead of only looking at individual encoded values,
+# we also calculate the total importance of each original
+# dataset column.
+
+grouped_importance = []
+
+
+for original_feature in features:
+
+    matching_rows = feature_importance[
+        feature_importance["Feature"].str.contains(
+            original_feature,
+            case=False,
+            regex=False
+        )
+    ]
+
+
+    total_importance = (
+        matching_rows["Importance"]
+        .sum()
+    )
+
+
+    grouped_importance.append({
+
+        "Original Feature":
+            original_feature,
+
+        "Total Importance":
+            total_importance
+    })
+
+
+grouped_importance = pd.DataFrame(
+    grouped_importance
+)
+
+
+grouped_importance = (
+
+    grouped_importance
+
+    .sort_values(
+
+        by="Total Importance",
+
+        ascending=False
+    )
+)
+
+
+# ============================================================
+# STEP 31: DISPLAY ORIGINAL FEATURE IMPORTANCE
+# ============================================================
+
+print("\n" + "=" * 70)
+print("IMPORTANCE BY ORIGINAL DATASET COLUMN")
+print("=" * 70)
+
+print(
+
+    grouped_importance
+    .to_string(
+        index=False
+    )
+)
+
+
+# ============================================================
+# STEP 32: PLOT ORIGINAL FEATURE IMPORTANCE
+# ============================================================
+
+plt.figure(
+    figsize=(10, 6)
+)
+
+
+sns.barplot(
+
+    data=grouped_importance,
+
+    x="Total Importance",
+
+    y="Original Feature"
+)
+
+
+plt.title(
+    "Feature Importance by Original Dataset Column"
+)
+
+
+plt.xlabel(
+    "Total Importance"
+)
+
+
+plt.ylabel(
+    "Original Feature"
+)
+
+
+plt.tight_layout()
+
+plt.show()
+
+
+# ============================================================
+# STEP 33: PREDICT A NEW RECORD
+# ============================================================
+
+# This is an example of a new hiring situation.
+#
+# IMPORTANT:
+# Change the values according to your actual dataset.
+#
+# The model can handle unseen categorical values because
+# handle_unknown="ignore" was used.
+
+new_data = pd.DataFrame({
+
+    "Year": [2026],
+
+    "Month": ["June"],
+
+    "Sector": ["IT/Technology"],
+
+    "Job_Role": ["Data Scientist"],
+
+    "Company": ["TCS"],
+
+    "Hiring_Count": [1000],
+
+    "Placement_Count": [100],
+
+    "Average_Salary": [10.0],
+
+    "Location": ["Hyderabad"],
+
+    "Source": ["Foundit"]
+})
+
+
+# Keep only features actually used by the model
+
+new_data = new_data[
+    features
+]
+
+
+# ============================================================
+# STEP 34: PREDICT DEMAND TREND
+# ============================================================
+
+prediction = pipeline.predict(
+    new_data
+)
+
+
+print("\n" + "=" * 70)
+print("NEW HIRING DEMAND PREDICTION")
+print("=" * 70)
+
+print(
+    "\nPredicted Demand Trend:",
+    prediction[0]
+)
+
+
+# ============================================================
+# STEP 35: PREDICTION PROBABILITY
+# ============================================================
+
+probabilities = pipeline.predict_proba(
+    new_data
+)
+
+
+classes = pipeline.named_steps[
+    "model"
+].classes_
+
+
+probability_df = pd.DataFrame(
+
+    probabilities,
+
+    columns=classes
+)
+
+
+print("\nPrediction probabilities:")
+
+print(
+
+    probability_df
+    .to_string(
+        index=False
+    )
+)
+
+
+# ============================================================
+# STEP 36: OPTIONAL REGRESSION MODEL
+# ============================================================
+
+# Your dataset DOES contain Hiring_Growth_%.
+#
+# Therefore, we can optionally create a second model
+# to predict Hiring_Growth_%.
+#
+# This is a REGRESSION problem.
+#
+# The target is numerical rather than categorical.
+#
+# IMPORTANT:
+# Hiring_Growth_% is NOT used in the classification model
+# above because it would leak information about Demand_Trend.
+
+if "Hiring_Growth_%" in df.columns:
+
+    print("\n" + "=" * 70)
+    print("OPTIONAL RANDOM FOREST REGRESSION MODEL")
+    print("=" * 70)
+
+
+    from sklearn.ensemble import (
+        RandomForestRegressor
+    )
+
+    from sklearn.metrics import (
+        mean_squared_error,
+        r2_score
+    )
+
+
+    # --------------------------------------------------------
+    # Regression features
+    # --------------------------------------------------------
+
+    regression_features = [
+
+        "Year",
+
+        "Month",
+
+        "Sector",
+
+        "Job_Role",
+
+        "Company",
+
+        "Hiring_Count",
+
+        "Placement_Count",
+
+        "Average_Salary",
+
+        "Location",
+
+        "Source"
+    ]
+
+
+    # Keep only available columns
+
+    regression_features = [
+
+        col
+
+        for col in regression_features
+
+        if col in df.columns
+    ]
+
+
+    # --------------------------------------------------------
+    # Remove rows with missing growth values
+    # --------------------------------------------------------
+
+    regression_df = df.dropna(
+
+        subset=[
+            "Hiring_Growth_%"
+        ]
+
+    ).copy()
+
+
+    # --------------------------------------------------------
+    # Regression input and target
+    # --------------------------------------------------------
+
+    X_reg = regression_df[
+        regression_features
+    ]
+
+
+    y_reg = regression_df[
+        "Hiring_Growth_%"
+    ]
+
+
+    # --------------------------------------------------------
+    # Identify numerical features
+    # --------------------------------------------------------
+
+    numeric_reg = (
+
+        X_reg
+
+        .select_dtypes(
+
+            include=[
+
+                "int64",
+
+                "float64",
+
+                "int32",
+
+                "float32"
+            ]
+        )
+
+        .columns
+
+        .tolist()
+    )
+
+
+    # --------------------------------------------------------
+    # Identify categorical features
+    # --------------------------------------------------------
+
+    categorical_reg = (
+
+        X_reg
+
+        .select_dtypes(
+
+            include=[
+
+                "object",
+
+                "category"
+            ]
+        )
+
+        .columns
+
+        .tolist()
+    )
+
+
+    # --------------------------------------------------------
+    # Regression preprocessing
+    # --------------------------------------------------------
+
+    reg_preprocessor = ColumnTransformer(
+
+        transformers=[
+
+            (
+
+                "categorical",
+
+                OneHotEncoder(
+
+                    handle_unknown="ignore",
+
+                    sparse_output=False
+                ),
+
+                categorical_reg
+            ),
+
+            (
+
+                "numeric",
+
+                "passthrough",
+
+                numeric_reg
+            )
+        ]
+    )
+
+
+    # --------------------------------------------------------
+    # Create Random Forest Regressor
+    # --------------------------------------------------------
+
+    reg_model = RandomForestRegressor(
+
+        n_estimators=200,
+
+        random_state=42,
+
+        n_jobs=-1
+    )
+
+
+    # --------------------------------------------------------
+    # Regression pipeline
+    # --------------------------------------------------------
+
+    reg_pipeline = Pipeline(
+
+        steps=[
+
+            (
+
+                "preprocessing",
+
+                reg_preprocessor
+            ),
+
+            (
+
+                "model",
+
+                reg_model
+            )
+        ]
+    )
+
+
+    # --------------------------------------------------------
+    # Train/test split
+    # --------------------------------------------------------
+
+    X_train_reg, X_test_reg, y_train_reg, y_test_reg = (
+
+        train_test_split(
+
+            X_reg,
+
+            y_reg,
+
+            test_size=0.20,
+
+            random_state=42
+        )
+    )
+
+
+    # --------------------------------------------------------
+    # Train regression model
+    # --------------------------------------------------------
+
+    print(
+        "\nTraining Random Forest Regressor..."
+    )
+
+
+    reg_pipeline.fit(
+
+        X_train_reg,
+
+        y_train_reg
+    )
+
+
+    print(
+        "Regression model training completed!"
+    )
+
+
+    # --------------------------------------------------------
+    # Make growth predictions
+    # --------------------------------------------------------
+
+    y_pred_reg = reg_pipeline.predict(
+
+        X_test_reg
+    )
+
+
+    # --------------------------------------------------------
+    # Calculate RMSE
+    # --------------------------------------------------------
+
+    rmse = np.sqrt(
+
+        mean_squared_error(
+
+            y_test_reg,
+
+            y_pred_reg
+        )
+    )
+
+
+    # --------------------------------------------------------
+    # Calculate R²
+    # --------------------------------------------------------
+
+    r2 = r2_score(
+
+        y_test_reg,
+
+        y_pred_reg
+    )
+
+
+    # --------------------------------------------------------
+    # Display regression performance
+    # --------------------------------------------------------
+
+    print("\n" + "=" * 70)
+    print("REGRESSION PERFORMANCE")
+    print("=" * 70)
+
+    print(
+        f"\nRMSE     : {rmse:.4f}"
+    )
+
+    print(
+        f"R² Score : {r2:.4f}"
+    )
+
+
+else:
+
+    print("\n" + "=" * 70)
+    print("REGRESSION MODEL")
+    print("=" * 70)
+
+    print(
+        "\nHiring_Growth_% was not found."
+    )
+
+    print(
+        "Regression model was skipped."
+    )
+
+
+# ============================================================
+# END OF PROGRAM
+# ============================================================
+
+print("\n" + "=" * 70)
+print("PROGRAM COMPLETED SUCCESSFULLY")
+print("=" * 70)

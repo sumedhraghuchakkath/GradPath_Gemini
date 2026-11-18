@@ -1,0 +1,21 @@
+GRADPATH FINAL SETUP (WINDOWS / VS CODE)
+
+1. Extract the ZIP and open the GradPath_Gemini folder in VS Code.
+2. In the VS Code terminal run:
+   py -m venv .venv
+   .\.venv\Scripts\python.exe -m pip install --upgrade pip
+   .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+3. Copy .streamlit\secrets.toml.example to .streamlit\secrets.toml.
+4. Open secrets.toml and replace the placeholder with your own Gemini API key. Keep model = "gemini-2.5-flash". Never share this file or upload it publicly.
+5. Run:
+   .\.venv\Scripts\python.exe -m streamlit run app.py
+6. Open http://localhost:8501 if the browser does not open automatically. Stop the app with Ctrl+C in the terminal.
+
+MARKET DATA
+The India fresher-market snapshot is fetched from Hopin's public daily report and attributed in the app. No Hopin API key is required. It reports current job postings, not confirmed hires. GradPath saves one local snapshot when the app is opened on a new report date. The app must be running/opened to collect local snapshots; it does not run in the background while closed. The experimental ML trend estimate appears after seven distinct daily snapshots have been collected.
+
+RESUME AND ROADMAP
+Resume Coach accepts PDF, DOCX and TXT files up to 10 MB. Text is processed in the app session and the app code does not write the uploaded file or extracted resume text to disk. Choose a target career goal, review detected CGPA/skills, then open Course Roadmap to select a timeline and generate a downloadable personalised plan. Review detected content manually; keyword detection can miss skills or interpret a word incorrectly.
+
+GEMINI PRIVACY
+Gemini receives the current question, up to 12 recent chat messages and a short profile summary. It does not receive the uploaded resume file or full extracted resume text. Google API quota, model availability and data terms can change; review current terms before using real student data.
